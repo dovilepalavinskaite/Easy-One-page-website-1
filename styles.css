@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,700;1,900&display=swap');
+
+:root {
+	--dark-green: #2b3329;
+	--lighter-green: #678a5d;
+	--slightly-grey: #b1b2b1;
+	--text-color: #606060;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Roboto, sans-serif;
+	margin: 0;
+}
+
+.container {
+	max-width: 1300px;
+	margin: 0 auto;
+	width: 90%;
+}
+
+/*HEADER STYLES: */
+
+header {
+	background-color: var(--dark-green);
+	min-height: 100vh;
+	position: relative;
+}
+
+nav {
+	display: flex;
+	justify-content: space-between;
+}
+
+.logo {
+	color: var(--slightly-grey);
+	font-size: 2rem;
+	letter-spacing: 0.3rem;
+}
+
+.fa-bars {
+	color: var(--slightly-grey);
+	font-size: 2rem;
+	padding-top: 2rem;
+	cursor: pointer;
+}
+
+.bcg-img {
+	padding-top: 50px;
+}
+.bcg-img img {
+	width: 100%;
+	position: relative;
+	max-width: 950px;
+	-webkit-box-shadow: -2px 9px 15px 3px rgba(0,0,0,0.83); 
+	box-shadow: -2px 9px 15px 3px rgba(0,0,0,0.83);
+	z-index: 1;
+}
+
+.top-text {
+	position: absolute;
+	z-index: 2;
+	top: 20%;
+	left: 50%;
+	max-width: 500px;
+	background-color: #fff;
+	-webkit-box-shadow: -2px 9px 15px 3px rgba(0,0,0,0.83); 
+	box-shadow: -2px 9px 15px 3px rgba(0,0,0,0.83);
+}
+
+h1 {
+	color: var(--lighter-green);
+	font-size: 2.5rem;
+	letter-spacing: 0.2rem;
+}
+
+.content {
+	padding: 60px 40px 90px 40px;
+}
+
+
+.content p {
+	color: var(--text-color);
+	line-height: 1.5;
+	font-size: 1.5rem;
+}
+
+.content .text-note {
+	font-size: 1rem;
+	font-style: italic;
+}
+
+.text-note a{
+	text-decoration: underline;
+	color: var(--text-color)
+}
+
+.btn {
+	background-color: #b3d1ab;
+	border: none;
+	padding: 15px 30px;
+	text-transform: uppercase;
+	font-weight: 900;
+	letter-spacing: 0.1rem;
+	cursor: pointer;
+	transition: 0.7s;
+}
+
+.btn:hover {
+	background-color: #e0e5eb;
+}
+
+.heading-layer {
+	position: absolute;
+	min-height: 200px;
+	background-color: var(--lighter-green);
+	width: 100%;
+	top: calc(50% - 50px);
+}
+
+@media (max-width: 1200px) {
+	.bcg-img img {
+		max-width: 750px;
+	}
+}
+
+@media(max-width: 990px) {
+	.top-text {
+		top: 80%;
+		left: 30%;
+	}
+}
