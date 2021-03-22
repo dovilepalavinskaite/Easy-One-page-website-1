@@ -195,13 +195,105 @@ h2 {
 	z-index: 0;
 }
 
+/*PROCESS STEPS: */
 
+.process-steps {
+	padding-top: 60px;
+	padding-bottom: 60px;
+	text-align: center;
+}
 
+.steps {
+	display: flex;
+	justify-content: space-between;
+	padding-top: 30px;
+}
 
+.steps-summary {
+	max-width: 700px;
+	margin: 0 auto;
+}
 
+h3 {
+	color: #5d925c;
+	font-size: 2.5rem;
+}
 
+h4 {
+	color: #719f70;
+	font-size: 1.5rem;
+}
+
+.process-steps p {
+	color: var(--text-color);
+}
+
+.fa-mobile-alt, .fa-user-alt, .fa-star {
+	color: #719f70;
+	font-size: 2rem;
+}
+
+/*STAGES SECTION:*/
+
+.stages-section {
+	background-color: #466446;
+	padding-top: 30px;
+	padding-bottom: 60px;
+}
+
+.stages-wrap {
+	display: flex;
+	justify-content: space-between;
+}
+.stages {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	flex-grow: 1;
+}
+
+.stage {
+	max-width: 240px;
+	background-color: #fff;
+	padding: 20px 15px 20px 15px;
+	margin-bottom: 50px;
+	text-align: center;
+}
+
+.stage h5 {
+	color: #acd8ab;
+	font-size: 3rem;
+	margin: auto;
+}
+
+.stage p {
+	line-height: 1.5;
+	color: var(--text-color);
+}
+
+.stage a {
+	text-decoration: none;
+	color: #000;
+	text-transform: uppercase;
+}
+
+.stages-img img {
+	max-width: 800px;
+	z-index: -1;
+	margin-top: 200px;
+	margin-left: 50px;
+}
 
 /*MEDIA QUERIES:*/
+
+@media (max-width: 1280px) {
+	.green-block {
+		display: none;
+	}
+	.steps {
+		display: block;
+	}
+}
 
 @media (max-width: 1200px) {
 	.bcg-img img {
@@ -251,3 +343,17 @@ h2 {
 	}
 }
 
+@media (max-width: 800px) {
+	.about .bcg-img {
+		margin-left: 0px;
+		max-width: unset;
+	}
+	.white-bubble {
+		display: none;
+	}
+	.about img {
+		margin: 0 auto;
+		max-width: 200px;
+	}
+
+}
