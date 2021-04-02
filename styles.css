@@ -11,6 +11,8 @@
 	box-sizing: border-box;
 }
 
+
+
 .shadow-depth {
 	-webkit-box-shadow: -2px 9px 15px 3px rgba(0,0,0,0.83); 
 	box-shadow: -2px 9px 15px 3px rgba(0,0,0,0.83);
@@ -61,12 +63,81 @@ nav {
 	letter-spacing: 0.3rem;
 }
 
-.fa-bars {
-	color: var(--slightly-grey);
-	font-size: 2rem;
-	padding-top: 2rem;
+/*NAV BAR BURGER:*/
+
+.nav-burger {
+	margin-top: 2rem;
 	cursor: pointer;
 }
+
+.nav-1, .nav-2, .nav-3 {
+	height: 4px;
+	width: 35px;
+	background-color: var(--slightly-grey);
+	margin-bottom: 5px;
+	transition: 1s;
+}
+
+
+.nav-burger.opened .nav-1 {
+	transform: rotate(45deg);
+	margin-bottom: -3px;
+}
+
+.nav-burger.opened {
+	padding-top: 12px;
+}
+
+.nav-burger.opened .nav-2 {
+	transform: rotate(-45deg);
+	
+}
+
+.nav-burger.opened .nav-3 {
+	display: none;
+}
+
+
+/*Navmenu:*/
+
+.nav-menu {
+	height: 100vh;
+	width: 300px;
+	background-color: #000;
+	position: fixed;
+	top: 0;
+	z-index: 1;
+	transform: translateX(-400%);
+	transition: 1s;
+}
+
+.display {
+	transform: translateX(0);
+}
+
+
+
+.menu-wrap {
+	padding: 100px 10px 20px 20px;
+}
+
+.menu-btn {
+	position: absolute;
+	right: 10%;
+}
+
+ul > * {
+	margin-bottom: 30px;
+	text-transform: uppercase;
+}
+
+li a {
+	text-decoration: none;
+	color: var(--slightly-grey);
+	letter-spacing: 2px;
+}
+
+/*Header bottom: */
 
 .bcg-img {
 	padding-top: 50px;
